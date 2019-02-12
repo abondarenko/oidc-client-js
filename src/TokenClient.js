@@ -30,10 +30,10 @@ export class TokenClient {
             Log.error("TokenClient.exchangeCode: No redirect_uri passed");
             return Promise.reject(new Error("A redirect_uri is required"));
         }
-        if (!args.code_verifier) {
-            Log.error("TokenClient.exchangeCode: No code_verifier passed");
-            return Promise.reject(new Error("A code_verifier is required"));
-        }
+        // if (!args.code_verifier) {
+        //     Log.error("TokenClient.exchangeCode: No code_verifier passed");
+        //     return Promise.reject(new Error("A code_verifier is required"));
+        // }
         if (!args.client_id) {
             Log.error("TokenClient.exchangeCode: No client_id passed");
             return Promise.reject(new Error("A client_id is required"));
